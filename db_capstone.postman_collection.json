@@ -1,0 +1,438 @@
+{
+	"info": {
+		"_postman_id": "05769739-9346-4d6e-a67b-bfe1882d1a2e",
+		"name": "db_capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25792233"
+	},
+	"item": [
+		{
+			"name": "nguoi_dung",
+			"item": [
+				{
+					"name": "localhost:8080/api/user/sign-up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"test8@gmail.com\",\r\n    \"mat_khau\" : \"12771\",\r\n    \"ho_ten\" : \"tuoi\",\r\n    \"tuoi\" : 21\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/user/sign-up",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"sign-up"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/user/login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"test8@gmail.com\",\r\n    \"mat_khau\" : \"12771\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/user/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/user/detail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo5LCJlbWFpbCI6InRlc3Q4QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJHlyektqT3A0dTIvTDdKeVZ0R0RiZHUuQUt4SVQ4a0RoRFVJL0R3c2ZFQUNpNFBOeWx1TXhTIiwiaG9fdGVuIjoidHVvaSIsInR1b2kiOjIxLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY4NDUwNTcyOCwiZXhwIjoxNjg0NTA2MzI4fQ.kRblyTLnmhAIe234-1bonkuMQ_khChuVfWFOdmeYgXY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/user/detail",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/user/get-saves",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo5LCJlbWFpbCI6InRlc3Q4QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJHlyektqT3A0dTIvTDdKeVZ0R0RiZHUuQUt4SVQ4a0RoRFVJL0R3c2ZFQUNpNFBOeWx1TXhTIiwiaG9fdGVuIjoidHVvaSIsInR1b2kiOjIxLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY4NDUwNjA4MiwiZXhwIjoxNjg0NTA2NjgyfQ.pvuv8eUIgFtgo1QP26KBRBXHzm6lvnMIjafTPHVaO-I",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/user/get-saves",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"get-saves"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/user/get-images",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo5LCJlbWFpbCI6InRlc3Q4QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJHlyektqT3A0dTIvTDdKeVZ0R0RiZHUuQUt4SVQ4a0RoRFVJL0R3c2ZFQUNpNFBOeWx1TXhTIiwiaG9fdGVuIjoidHVvaSIsInR1b2kiOjIxLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY4NDUwNjA4MiwiZXhwIjoxNjg0NTA2NjgyfQ.pvuv8eUIgFtgo1QP26KBRBXHzm6lvnMIjafTPHVaO-I",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/user/get-images",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"get-images"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/user/delete-image/2",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo5LCJlbWFpbCI6InRlc3Q4QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJHlyektqT3A0dTIvTDdKeVZ0R0RiZHUuQUt4SVQ4a0RoRFVJL0R3c2ZFQUNpNFBOeWx1TXhTIiwiaG9fdGVuIjoidHVvaSIsInR1b2kiOjIxLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY4NDUwODg3NCwiZXhwIjoxNjg0NTA5NDc0fQ.mh7cd8nepXpiSfARBbcOJI9fmD6_vVjIX5h_M_4jyq0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/user/delete-image/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"delete-image",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/user/update-avatar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo5LCJlbWFpbCI6InRlc3Q4QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJHlyektqT3A0dTIvTDdKeVZ0R0RiZHUuQUt4SVQ4a0RoRFVJL0R3c2ZFQUNpNFBOeWx1TXhTIiwiaG9fdGVuIjoidHVvaSIsInR1b2kiOjIxLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY4NDUwOTQ1NywiZXhwIjoxNjg0NTEwMDU3fQ.UzEEn1IPDgpNA3QC1eY3EMGGMlgEQWrLN3y6eZKMl4A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/tanph/Desktop/Keanu_Reeves_2013_(10615146086)_(cropped).jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/api/user/update-avatar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"update-avatar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "hinh_anh",
+			"item": [
+				{
+					"name": "localhost:8080/api/images/get-images",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/images/get-images",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"images",
+								"get-images"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/images/get-images-by-name?name=pic",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/images/get-images-by-name?name=2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"images",
+								"get-images-by-name"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/images/get-image/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/images/get-image/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"images",
+								"get-image",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/images/save-image/1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo5LCJlbWFpbCI6InRlc3Q4QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJHlyektqT3A0dTIvTDdKeVZ0R0RiZHUuQUt4SVQ4a0RoRFVJL0R3c2ZFQUNpNFBOeWx1TXhTIiwiaG9fdGVuIjoidHVvaSIsInR1b2kiOjIxLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY4NDUwNTE0MiwiZXhwIjoxNjg0NTA1NzQyfQ.9r7mu1iI_txX2QZL3N2fqXAbMBVS8BVTD8724F5ej8U",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/images/save-image/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"images",
+								"save-image",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/images/upload",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo5LCJlbWFpbCI6InRlc3Q4QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJHlyektqT3A0dTIvTDdKeVZ0R0RiZHUuQUt4SVQ4a0RoRFVJL0R3c2ZFQUNpNFBOeWx1TXhTIiwiaG9fdGVuIjoidHVvaSIsInR1b2kiOjIxLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY4NDUwMDE4OCwiZXhwIjoxNjg0NTAwNzg4fQ.vmXwMdoG4MC_meMpSYXKyPvcb6hEuP5zbfsgxTNEiiQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/tanph/Desktop/JPEG_example_flower.jpg"
+								},
+								{
+									"key": "ten_hinh",
+									"value": "pic 2",
+									"type": "text"
+								},
+								{
+									"key": "mo_ta",
+									"value": "derc 1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/api/images/upload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"images",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "binh_luan",
+			"item": [
+				{
+					"name": "localhost:8080/api/comment/image/2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo5LCJlbWFpbCI6InRlc3Q4QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJHlyektqT3A0dTIvTDdKeVZ0R0RiZHUuQUt4SVQ4a0RoRFVJL0R3c2ZFQUNpNFBOeWx1TXhTIiwiaG9fdGVuIjoidHVvaSIsInR1b2kiOjIxLCJhbmhfZGFpX2RpZW4iOm51bGwsImlhdCI6MTY4NDUwMzcyMSwiZXhwIjoxNjg0NTA0MzIxfQ.8sKWRkuljQ39TesOBtMwqoXnL-MkjUF1z_miwpdeMXc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"noi_dung\": \"comment 4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/comment/image/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"comment",
+								"image",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/comment/image/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/comment/image/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"comment",
+								"image",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
